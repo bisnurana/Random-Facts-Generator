@@ -10,12 +10,9 @@
     xhr.onload = function(){
       if(this.status == 200 && num!=''){
         var txt = this.responseText;
-        var firstNum = txt[0];
+        var firstNum = txt.split(' ');
         var restText = txt.substr(txt.indexOf(' ') + 1);
-
-
-
-        content.innerHTML='<span>' + firstNum +' ' + '</span>' + restText;
+        content.innerHTML='<span>' + firstNum[0] + ' ' + '</span>' + restText;
       }
     }
     xhr.send();
