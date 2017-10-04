@@ -30,15 +30,22 @@ hr{
 }
 #content{
   color: #ffffff;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
 }
+#content span{
+  display: block;
+  font-size: 44px;
+  font-weight: bold;
+}
+
 .input-content{
   display: block;
   text-align: center;
 
 }
 .custom-input{
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   border-style:solid;
   border-color:#fff;
@@ -47,8 +54,8 @@ hr{
   font-size: 18px;
   padding-left:10px;
   padding-right: 10px;
-  height: 45px;
-  width: 245px;
+  height: 50px;
+  width: 200px;
   border-radius: 50px;
   -webkit-transition:all 0.5s ease;
   -o-transition:all 0.5s ease;
@@ -57,13 +64,14 @@ hr{
 
 .custom-input:hover,.custom-input:focus{
   border-color:#1AADD3;
-  border-width: 2px;
-  height: 50px;
-  width: 250px
+  border-width: 1px;
+  width: 240px
 }
 
 ::-webkit-input-placeholder{
   color:rgba(255, 255, 255, 0.5) ;
-  text-align: center;
-
+}
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
